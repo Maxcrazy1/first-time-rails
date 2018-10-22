@@ -13,6 +13,9 @@
     <ul class="nav justify-content-end">
       <%- if user_signed_in? %>
         <li class="nav-item">
+          <%= link_to 'Añadir Imagen', destroy_user_session_path, method: :delete, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
           <%= link_to 'Salir', destroy_user_session_path, method: :delete, class: "nav-link" %>
         </li>
       <% else %>
